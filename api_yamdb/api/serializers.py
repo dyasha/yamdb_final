@@ -3,7 +3,6 @@ import datetime as dt
 from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
 from rest_framework.generics import get_object_or_404
-
 from reviews.models import Category, Comment, CustomUser, Genre, Review, Title
 
 
