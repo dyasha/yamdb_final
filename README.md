@@ -1,5 +1,4 @@
-![build]
-(https://github.com/dyasha/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![build](https://github.com/dyasha/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # CI и CD проекта api_yamdb
 
