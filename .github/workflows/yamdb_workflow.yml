@@ -69,9 +69,9 @@ jobs:
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
             git clone https://github.com/dyasha/yamdb_final.git
-            cd yamdb_final/infra
+            cd yamdb_final/
             docker compose up -d 
-            cd ../../
+            cd ../
             rm -rf yamdb_final
             docker compose exec web python manage.py collectstatic --no-input
   send_message:
