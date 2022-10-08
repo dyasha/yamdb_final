@@ -68,11 +68,7 @@ jobs:
             echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-            git clone https://github.com/dyasha/yamdb_final.git
-            cd yamdb_final/
             docker compose up -d 
-            cd ../
-            rm -rf yamdb_final
             docker compose exec web python manage.py collectstatic --no-input
   send_message:
       runs-on: ubuntu-latest
