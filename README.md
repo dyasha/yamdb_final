@@ -45,9 +45,7 @@ Content-Type: application/json
 
 {
     "username": "user2",
-
     "email": "user2@me.ru",
-    
     "role": "user"
 }
 ```
